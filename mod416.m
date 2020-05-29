@@ -12,6 +12,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 function u = mod416(b, modulation, Fc, Fs, symbolRate)
+    
+    k = Fs / symbolRate;
 
     if strcmp('QPSK', modulation)
         [im, qm] = qpskMapper(b);

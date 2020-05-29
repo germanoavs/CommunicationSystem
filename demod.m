@@ -9,8 +9,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 function bitsRx = demod(u, mod, Fc, Fs, symbolRate)
-    k = Fs / symbolRate;
-
     % heterodinação 
     n = 0:length(u)-1;
     ik = u .* cos(2*pi*(Fc*n/Fs));

@@ -37,5 +37,5 @@ function out = blockDecoder(y)
     
     out_gf = r_gf(:, 1:2);
     out_gf = reshape(out_gf.', 1, []);
-    out = double(out_gf.x)
+    out = double(out_gf.x);
 end
